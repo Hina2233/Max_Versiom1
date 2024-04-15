@@ -8,6 +8,7 @@ import Basil from "../assets/Basil.png";
 import Tomato from "../assets/Tomato.png";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import Banner from "../assets/Wen-Banner-03.png";
 
 export default function Customize({ ingredients, setIngredients }) {
   let navigate = useNavigate();
@@ -21,6 +22,12 @@ export default function Customize({ ingredients, setIngredients }) {
   };
 
   return (
+    <div className="banner">
+        <img 
+          src={Banner} 
+          alt="Banner" 
+          className="bannerImage"
+        />
     <div style={{ display: "flex" }}>
       <div style={{ flex: 1, padding: 40 }}>
         <div style={{ maxHeight: 500, maxWidth: 500, position: "relative" }}>
@@ -169,6 +176,7 @@ export default function Customize({ ingredients, setIngredients }) {
           Proceed to Checkout
         </button>
       </div>
+    </div>
     </div>
   );
 }

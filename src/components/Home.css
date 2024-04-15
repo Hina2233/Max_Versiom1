@@ -1,0 +1,153 @@
+.welcomeMessage {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.welcomeMessage h1 {
+  animation: breathe 3s infinite alternate;
+}
+
+.pizza-button,
+.flavours-button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pizza-button:hover,
+.flavours-button:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+
+.pizza-button:hover span,
+.flavours-button:hover span {
+  animation: moveText 1s infinite alternate;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+}
+
+.buttonsContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
+.z1 {
+  z-index: 1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.z4 {
+  z-index: 4;
+}
+
+.proceedToCheckout {
+  margin-top: 30px;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  background: orange;
+  border: 0px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Custom checkbox and radio button styles */
+.container-checkbox,
+.container-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-checkbox input,
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-checkbox .checkmark,
+.container-radio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container-checkbox:hover input ~ .checkmark,
+.container-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-checkbox input:checked ~ .checkmark,
+.container-radio input:checked ~ .checkmark {
+  background-color: #fccd3d;
+}
+
+.container-checkbox .checkmark:after,
+.container-radio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-checkbox input:checked ~ .checkmark:after,
+.container-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #0d0628;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container-radio .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}

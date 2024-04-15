@@ -1,0 +1,157 @@
+.pizza-selection-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.pizza-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Adjusted width for pizza-card to show 6 cards in a row on larger screens */
+.pizza-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(16.666% - 20px); /* Adjusted width for 6 cards */
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(163, 54, 8);
+  color: rgb(253, 255, 203);
+}
+
+.pizza-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.pizza-card h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.pizza-card p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.proceedToCheckout {
+  display: block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.proceedToCheckout:hover {
+  background-color: yellow;
+}
+
+.container-radio {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+}
+
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-radio .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.container-radio:hover .checkmark {
+  background-color: rgb(0, 0, 0);
+}
+
+.container-radio input:checked ~ .checkmark {
+  background-color: rgb(255, 230, 4);
+  border-color: orange;
+}
+
+/* Media Query to adjust width for different screen sizes */
+@media (max-width: 1200px) {
+  .pizza-card {
+    width: calc(25% - 20px); /* Adjust for 4 cards in a row */
+  }
+}
+
+@media (max-width: 900px) {
+  .pizza-card {
+    width: calc(33.33% - 20px); /* Adjust for 3 cards in a row */
+  }
+}
+
+@media (max-width: 600px) {
+  .pizza-card {
+    width: calc(50% - 20px); /* Adjust for 2 cards in a row */
+  }
+}
+
+@media (max-width: 400px) {
+  .pizza-card {
+    width: 100%; /* Adjust for 1 card in a row */
+  }
+}
+
+.select-size {
+  margin-top: 10px;
+}
+
+.select-size select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.addToBasket {
+  margin-top: 10px;
+  padding: 8px 16px;
+  width: 100%; /* Make the button fill the width */
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addToBasket:hover {
+  background-color: yellow;
+}
+
+.cart-button-container {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.cartButton {
+  display: flex;
+  align-items: center;
+}
+
+.cartIcon {
+  width: 30px;
+  height: 30px;
+}

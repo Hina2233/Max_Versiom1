@@ -168,3 +168,12 @@ body {
   cursor: pointer;
   font-size: 20px;
 }
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
